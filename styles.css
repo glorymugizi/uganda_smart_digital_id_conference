@@ -7,6 +7,7 @@ header {
   border: 1px red solid;
   /* padding: 0 20px; */
   /* background-color: #3a3838; */
+  height: 100vh;
 }
 
 .social-icons {
@@ -29,9 +30,24 @@ header {
   justify-content: space-between;
   color: #ffffff;
 }
+.introduction {
+  background-image: url(./images/mobile-images/mobile-page-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  padding-top: 1.25rem;
+}
 
 @media only screen and (max-width: 768px) {
   .social-icons {
     display: none;
+  }
+  .introduction {
+    background-image: url(./images/desktop-images/desktop_intro_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: fit-content;
   }
 }
