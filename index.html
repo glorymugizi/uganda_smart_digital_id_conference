@@ -44,7 +44,9 @@
       </div>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-          <a class="navbar-brand" href="#">SDID 2023</a>
+          <a class="navbar-brand" href="#"
+            ><img src="./images/icons/Logo.png" alt="logo" class="logo"
+          /></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -79,15 +81,25 @@
             <button class="btn btn-outline-danger" type="submit">Search</button>
           </div>
         </div>
+        <div class="mobile-menu hidden">
+          <span class="close-btn"> &times; </span>
+          <ul>
+            <li>About</li>
+            <li>Program</li>
+            <li>Join</li>
+            <li>Sponsor</li>
+            <li>News</li>
+          </ul>
+        </div>
       </nav>
       <section class="introduction">
         <div class="container">
           <div>
-            <h4>"Hello sharing world"</h4>
-            <h1>CREATIVE COMMONS</h1>
-            <h1>GROBAL SUMMIT</h1>
-            <h1>2023</h1>
-            <p>
+            <h4 class="introduction-heading">"Hello sharing world"</h4>
+            <h1 class="introduction-heading">CREATIVE COMMONS</h1>
+            <h1 class="introduction-heading">GROBAL SUMMIT</h1>
+            <h1 class="introduction-heading">2023</h1>
+            <p class="introduction-paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
               tempore ducimus commodi veritatis deserunt unde eaque nostrum qui
               similique eos impedit sint.
@@ -98,21 +110,95 @@
         </div>
       </section>
     </header>
-    <section class="main-program container">
-      <div class="program-container grid">
-        <div class="program-item">card one</div>
-        <div class="program-item">card two</div>
-        <div class="program-item">card three</div>
-        <div class="program-item">card four</div>
-        <div class="program-item">card five</div>
+    <section class="main-program">
+      <h4>Main Program</h4>
+      <div class="program-container">
+        <div class="program-item">
+          <div class="program-icon">
+            <div class="program-image">
+              <img src="./images/icons/icon-one.png" alt="" />
+            </div>
+            <h6>Lecture</h6>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="program-item">
+          <div class="program-icon">
+            <div class="program-image">
+              <img src="./images/icons/Exhibition.png" alt="" />
+            </div>
+            <h6>CC <br />Exhibition</h6>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="program-item">
+          <div class="program-icon">
+            <div class="program-image">
+              <img src="./images/icons/Forum.png" alt="" />
+            </div>
+            <h6>Forum</h6>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="program-item">
+          <div class="program-icon">
+            <div class="program-image">
+              <img src="./images/icons/workshop.png" alt="" />
+            </div>
+            <h6>Workshop</h6>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="program-item">
+          <div class="program-icon">
+            <div class="program-image">
+              <img src="./images/icons/icon-one.png" alt="" />
+            </div>
+            <h6>Lecture</h6>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
       </div>
+      <!-- <h6>See the whole program</h6> -->
+      <div class="join-summit"><h6>Join the smart ID Summit 2023</h6></div>
     </section>
-    <section class="featured-speakers container"></section>
-    <footer class="container">
-      <div class="partners">
-        <div><h5>Partners</h5></div>
+    <section class="featured-speakers">
+      <h5 class="featured heading">Featured Speakers</h5>
+      <div class="speakers-container container"></div>
+    </section>
+    <footer class="">
+      <div>
+        <h5>Partners</h5>
       </div>
-      <div></div>
+      <div class="partners container">
+        <div class="Partners-logo">
+          <img src="./images/partners/Google.png" alt="" />
+        </div>
+        <!-- <div class="Partners-logo">
+          <img src="./images/partners/id4Afriaca.png" alt="" />
+        </div> -->
+        <div class="Partners-logo mozilla">
+          <img src="./images/partners/mozilla.png" alt="" />
+        </div>
+        <div class="Partners-logo naver">
+          <img src="./images/partners/naver.png" alt="" />
+        </div>
+        <div class="Partners-logo">
+          <img src="./images/partners/nira_logo.png" alt="" />
+        </div>
+        <div class="Partners-logo">
+          <img src="./images/partners/Muehlbauer_logo.png" alt="" />
+        </div>
+      </div>
+
+      <div class="footer-logo container">
+        <div><img src="./images/icons/Logo.png" alt="" class="logo" /></div>
+        <div>
+          <p class="footer-paragraph">
+            All rights reserved &copy;Smart ID 4 Uganda
+          </p>
+        </div>
+      </div>
     </footer>
     <script src="./scripts.js"></script>
   </body>
