@@ -2,6 +2,9 @@
 const mobileMenu = document.querySelector(".mobile-menu");
 const closeBtn = document.querySelector(".close-btn");
 const toggleMenu = document.querySelector(".navbar-toggler-icon");
+const footer = document.querySelector(".footer");
+const more = document.querySelector(".more");
+const readMore = document.querySelector(".read-more");
 
 toggleMenu.addEventListener("click", function () {
   mobileMenu.classList.remove("hidden");
@@ -13,6 +16,10 @@ window.addEventListener("resize", function () {
   if (window.innerHeight >= 768) {
     mobileMenu.classList.add("hidden");
   }
+});
+more.addEventListener("click", function () {
+  footer.classList.remove("hidden");
+  moreMore.classList.add("hidden");
 });
 
 let speakersArray = [

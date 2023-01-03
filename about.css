@@ -1,0 +1,62 @@
+.about .introduction-heading {
+  text-align: center;
+}
+
+.about .introduction-paragraph {
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  text-align: center;
+}
+
+.about .about-contact {
+  text-align: center;
+  font-size: 12px;
+}
+
+.about .about-detail {
+  border: 1px solid green;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.625rem;
+}
+
+.about .about-heading {
+  padding: 0.625rem;
+}
+
+.about .about-logo {
+  width: 100%;
+  height: 12.5rem;
+}
+
+.about .about-logo img {
+  width: 12.5rem;
+  height: auto;
+}
+
+.about .past-summits {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  gap: 10px;
+}
+
+.about .past-description {
+  width: 100%;
+  height: 5.375rem;
+  margin: auto;
+}
+
+.about .past-summit-images {
+  width: 90%;
+  margin: auto;
+}
+
+.about .past-summit-images img {
+  width: 100%;
+  height: auto;
+}
