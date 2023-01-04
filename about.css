@@ -35,9 +35,11 @@
   width: 12.5rem;
   height: auto;
 }
+
 .hide-para {
   visibility: hidden;
 }
+
 .past-summit {
   display: flex;
   flex-direction: column;
@@ -76,6 +78,7 @@
     margin: auto; */
     border: 2px solid #f1f1f1;
   }
+
   .about .introduction-paragraph {
     background-color: #fff;
     border: 1px solid #e8e8e8;
@@ -83,6 +86,7 @@
     width: 80%;
     margin-left: 10.625rem;
   }
+
   .past-summits {
     border: 2px solid #f1f1f1;
   }
@@ -99,14 +103,17 @@
     width: 45%;
     margin: auto;
   }
+
   .hide-para {
     visibility: visible;
   }
+
   .about-logo {
     display: flex;
     height: 12.5rem;
     justify-content: center;
   }
+
   .about-logo img {
     width: 20.5rem;
     height: auto;
