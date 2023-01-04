@@ -23,38 +23,44 @@ more.addEventListener("click", function () {
 });
 let speakersArray = [
   {
-    name: "Name",
-    university: "University",
+    name: "Dan Ssekasiko",
+    university:
+      " Professor  of Computer Science & Engineering at the University of Washington",
     img: "./images/speakers/pexels-igreja-dimensão-10295936.jpg",
     biodata: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
-    name: "Name",
-    university: "University",
+    name: "Agaba Nelson",
+    university:
+      "Professor of Computer Science & Engineering at the University of Washington ",
     img: "./images/speakers/pexels-pranav-digwal-32976.jpg",
     biodata: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
-    name: "Name",
-    university: "University",
+    name: "Davin",
+    university:
+      "Professor of Computer Science & Engineering at the University of Washington",
     img: "/images/speakers/product-school-DL-yyYDDNX4-unsplash.jpg",
     biodata: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
-    name: "Name",
-    university: "University",
+    name: "James Garry",
+    university:
+      "Professor of Computer Science & Engineering at the University of Washington",
     img: "./images/speakers/pexels-igreja-dimensão-10295936.jpg",
     biodata: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
-    name: "Name",
-    university: "University",
+    name: "Daniel Matama",
+    university:
+      "Professor of Computer Science & Engineering at the University of Washington",
     img: "./images/speakers/product-school-DL-yyYDDNX4-unsplash.jpg",
     biodata: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
-    name: "Name",
-    university: "University",
+    name: "Glory Mugizi",
+    university:
+      "Professor of Computer Science & Engineering at the University of Washington",
     img: "./images/speakers/pexels-pranav-digwal-32976.jpg",
     biodata: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
@@ -73,7 +79,7 @@ speakersArray.forEach((speaker) => {
   <div class="speaker-bio">
     <h6>${name}</h6>
     <p class="speaker-education">${university}</p>
-    <p>biodata</p>
+    <p>${biodata}</p>
   </div>
 </div>
 `;

@@ -9,6 +9,7 @@
   width: 60px;
   height: 60px;
   display: none;
+  border-radius: 30px;
 }
 
 .social-icons {
@@ -45,6 +46,18 @@
   justify-content: flex-start;
 }
 
+.smart-id {
+  border: 3px solid #f0450f;
+  width: 100px;
+  color: #f0450f;
+  padding: 2px;
+  text-align: center;
+}
+
+.smart-id h5 {
+  padding-bottom: 0;
+}
+
 /* start of mobile Menu */
 .mobile-menu {
   position: fixed;
@@ -55,6 +68,12 @@
   background: rgba(240, 235, 235, 0.8);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+}
+
+.navbar-toggler {
+  border: 0;
+  font-size: 30px;
+  font-weight: 900;
 }
 
 .close-btn {
@@ -104,12 +123,26 @@
   padding: 10px;
 }
 
+/* program section */
 .main-program {
   text-align: center;
   background: url(./images/pattern_bg.png);
   background-color: rgba(5, 5, 5, 0.98);
   color: #fff;
   padding: 20px 0;
+}
+
+.program-heading,
+.featured-heading {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.program-heading hr {
+  color: #f0450f;
+  width: 20px;
+  text-align: center;
 }
 
 .program-container {
@@ -147,6 +180,12 @@
   width: 12rem;
 }
 
+.whole-program {
+  display: none;
+  text-decoration: underline;
+  padding: 20px;
+}
+
 .join-summit {
   display: flex;
   flex-direction: column;
@@ -176,7 +215,7 @@
 
 .speaker-image {
   width: 100px;
-  height: 120px;
+  height: 130px;
 }
 
 .speaker-image img {
@@ -188,6 +227,7 @@
   display: flex;
   font-size: 16px;
   gap: 10px;
+  margin-left: 0.9rem;
 }
 
 .speakers p {
@@ -196,7 +236,8 @@
 
 .speaker-education {
   color: #ff4f39;
-  font-weight: bold;
+  font-weight: 400;
+  font-style: italic;
 }
 
 /* read more section */
@@ -226,6 +267,17 @@
 }
 
 /* footer */
+footer {
+  background-color: #424242;
+  color: #fff;
+}
+
+.footer-heading {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
 .partners {
   display: flex;
   flex-wrap: wrap;
@@ -256,6 +308,8 @@
   align-items: center;
   gap: 0.625rem;
   padding: 1.25rem;
+  background-color: #fff;
+  color: #8e8e90;
 }
 
 .footer-paragraph {
@@ -265,6 +319,29 @@
 @media only screen and (min-width: 768px) {
   .social-icons {
     display: flex;
+  }
+
+  .navbar-nav {
+    width: 700px;
+    justify-content: flex-end;
+  }
+
+  .nav-item {
+    padding-right: 30px;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+    width: 60px;
+    height: 60px;
+  }
+
+  .active {
+    color: #f0450f;
   }
 
   .introduction {
@@ -324,6 +401,17 @@
     gap: 2px;
   }
 
+  .whole-program {
+    display: flex;
+    text-decoration: underline;
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .join-summit {
+    display: none;
+  }
+
   /* footer desktop styles */
   .partners {
     display: flex;
@@ -342,7 +430,7 @@
   }
 
   .naver {
-    flex: 0;
+    flex-grow: inherit;
   }
 
   footer {
