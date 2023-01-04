@@ -5,6 +5,7 @@ const toggleMenu = document.querySelector(".navbar-toggler-icon");
 const footer = document.querySelector(".footer");
 const more = document.querySelector(".more");
 const readMore = document.querySelector(".read-more");
+const speakers = document.querySelector(".speakers");
 
 toggleMenu.addEventListener("click", function () {
   mobileMenu.classList.remove("hidden");
@@ -21,7 +22,7 @@ more.addEventListener("click", function () {
   footer.classList.remove("hidden");
   moreMore.classList.add("hidden");
 });
-let speakersArray = [
+const speakersArray = [
   {
     name: "Dan Ssekasiko",
     university:
