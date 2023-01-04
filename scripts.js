@@ -21,7 +21,6 @@ more.addEventListener("click", function () {
   footer.classList.remove("hidden");
   moreMore.classList.add("hidden");
 });
-
 let speakersArray = [
   {
     name: "Name",
@@ -63,20 +62,19 @@ let speakersArray = [
 const featuredSpeakers = document.querySelector(".speakers-container");
 speakersArray.forEach((speaker) => {
   const { name, university, img, detail, biodata } = speaker;
-  featuredSpeakers.innerHTML += `
-  <div class="speakers-container container">
-    <div class="speakers">
-      <div>
-        <div class="speaker-image">
-          <img
-            src=${img}
-          />
-        </div>
-      </div>
-      <div class="speaker-bio">
-        <h6>${name}</h6>
-        <p class="speaker-education">${university}</p>
-        <p>${biodata}</p>
-      </div>
-    </div></div>`;
+  featuredSpeakers.innerHTML += `<div class="speakers">
+  <div>
+    <div class="speaker-image">
+      <img
+        src=${img}
+      />
+    </div>
+  </div>
+  <div class="speaker-bio">
+    <h6>${name}</h6>
+    <p class="speaker-education">${university}</p>
+    <p>biodata</p>
+  </div>
+</div>
+`;
 });

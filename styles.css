@@ -12,7 +12,7 @@
 }
 
 .social-icons {
-  display: flex;
+  display: none;
   justify-content: flex-end;
   background-color: #3a3838;
   padding: 6px 90px;
@@ -114,6 +114,7 @@
 
 .program-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 8px;
   padding: 8px 0;
@@ -176,18 +177,9 @@
 .speaker-image {
   width: 100px;
   height: 120px;
-  background-image: url(./images/chess-bg.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .speaker-image img {
-  width: 100%;
-  height: 100%;
-}
-
-.checker-image img {
   width: 100%;
   height: 100%;
 }
@@ -270,9 +262,9 @@
   font-size: 12px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .social-icons {
-    display: none;
+    display: flex;
   }
 
   .introduction {
@@ -282,7 +274,84 @@
     background-position: center;
   }
 
+  .speakers-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+  }
+
+  .speakers {
+    display: flex;
+    font-size: 16px;
+    gap: 10px;
+    width: 45%;
+  }
+
+  .speaker-image {
+    width: 160px;
+    height: 140px;
+  }
+
   .program-container {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+    width: 90%;
+    margin: auto;
+  }
+
+  .program-item {
+    display: flex;
+    height: 220px;
+    padding: 2px;
+    background-color: rgba(59, 59, 59, 0.9);
+  }
+
+  .program-icon h6 {
+    color: #ff4f39;
+    width: 5rem;
+  }
+
+  .program-icon {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    gap: 2px;
+  }
+
+  /* footer desktop styles */
+  .partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 150px;
+    background-color: #424242;
+    padding: 20px;
+    color: #fff;
+  }
+
+  .Partners-logo {
+    width: 7.5rem;
+    height: 2.5rem;
+  }
+
+  .naver {
+    flex: 0;
+  }
+
+  footer {
+    background-color: #424242;
+    color: #fff;
+  }
+
+  .footer-logo {
+    background-color: #f2f2f2;
+    color: #8e8e90;
   }
 }
