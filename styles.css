@@ -113,7 +113,6 @@
   background-position: center;
   height: 28.5rem;
   padding-top: 1.25rem;
-  border: 2px solid greenyellow;
 }
 
 .introduction-container {
@@ -245,7 +244,6 @@
   display: flex;
   font-size: 16px;
   gap: 10px;
-  border: 2px blue solid;
 }
 
 .speaker-bio {
