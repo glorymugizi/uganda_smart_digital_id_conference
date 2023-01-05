@@ -1,8 +1,6 @@
 const mobileMenu = document.querySelector('.mobile-menu');
 const closeBtn = document.querySelector('.close-btn');
 const toggleMenu = document.querySelector('.navbar-toggler-icon');
-const footer = document.querySelector('.footer');
-const more = document.querySelector('.more');
 toggleMenu.addEventListener('click', () => {
   mobileMenu.classList.remove('hidden');
 });
@@ -13,10 +11,6 @@ window.addEventListener('resize', () => {
   if (window.innerHeight >= 768) {
     mobileMenu.classList.add('hidden');
   }
-});
-more.addEventListener('click', () => {
-  footer.classList.remove('hidden');
-  more.classList.add('hidden');
 });
 
 const speakersArray = [
@@ -38,7 +32,7 @@ const speakersArray = [
     name: 'Davin',
     university:
       'Professor of Computer Science & Engineering at the University of Washington',
-    img: '/images/speakers/product-school-DL-yyYDDNX4-unsplash.jpg',
+    img: './images/speakers/product-school-DL-yyYDDNX4-unsplash.jpg',
     biodata: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
   },
   {
