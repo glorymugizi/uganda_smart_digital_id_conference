@@ -1,3 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'lato', sans-serif;
+  box-sizing: border-box;
+}
+
+.about .introduction {
+  background-image: url(./images/mobile-images/mobile-page-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  padding-top: 1.25rem;
+}
+
 .about .introduction-heading {
   text-align: center;
 }
@@ -14,12 +30,14 @@
 }
 
 .about-detail {
-  height: 25rem;
+  height: 40rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0.625rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .about-heading {
@@ -28,12 +46,13 @@
 
 .about-logo {
   width: 100%;
-  height: 12.5rem;
+  text-align: center;
 }
 
 .about-logo img {
   width: 12.5rem;
   height: auto;
+  border: solid 1px #f1f1f1;
 }
 
 .hide-para {
@@ -44,7 +63,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 400px;
+  height: 35rem;
 }
 
 .past-summits {
@@ -57,13 +76,29 @@
 
 .past-description {
   width: 100%;
-  height: 5.375rem;
   margin: auto;
 }
 
 .past-summit-images {
   width: 90%;
   margin: auto;
+  background: #ff4500;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.past-img {
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.past-summit-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .past-summit-images img {
@@ -73,10 +108,8 @@
 
 @media only screen and (min-width: 768px) {
   .about .past-description {
-    /* width: 100%;
-    height: 5.375rem;
-    margin: auto; */
-    border: 2px solid #f1f1f1;
+    border-top: 2px solid #f1f1f1;
+    padding-top: 10px;
   }
 
   .about .introduction-paragraph {
@@ -84,11 +117,28 @@
     border: 1px solid #e8e8e8;
     text-align: center;
     width: 80%;
-    margin-left: 10.625rem;
+    margin-left: 6.625rem;
+  }
+
+  .about-heading .introduction-paragraph {
+    border: none;
+  }
+
+  .about-detail {
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.625rem;
+  }
+
+  .about-heading h6 {
+    text-align: center;
   }
 
   .past-summits {
-    border: 2px solid #f1f1f1;
+    text-align: center;
   }
 
   .past-summit {
@@ -96,12 +146,28 @@
     flex-direction: row;
     width: 100%;
     height: 400px;
-    border: 2px solid #f1f1f1;
   }
 
   .past-summit-images {
     width: 45%;
     margin: auto;
+    background: #ff4500;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .past-img {
+    object-fit: cover;
+    opacity: 0.4;
+  }
+
+  .past-summit-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .hide-para {
@@ -119,5 +185,16 @@
     height: auto;
     border: 2px solid #f1f1f1;
     padding: 20px;
+  }
+
+  .about .partners,
+  .footer-heading {
+    display: none;
+  }
+
+  .about .footer-logo {
+    background-color: #2e2e2e;
+    color: #f1f1f1;
+    height: 12.5rem;
   }
 }

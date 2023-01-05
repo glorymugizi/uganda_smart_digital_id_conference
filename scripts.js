@@ -1,74 +1,73 @@
-"use strict";
-const mobileMenu = document.querySelector(".mobile-menu");
-const closeBtn = document.querySelector(".close-btn");
-const toggleMenu = document.querySelector(".navbar-toggler-icon");
-const footer = document.querySelector(".footer");
-const more = document.querySelector(".more");
-const readMore = document.querySelector(".read-more");
-const speakers = document.querySelector(".speakers");
-
-toggleMenu.addEventListener("click", function () {
-  mobileMenu.classList.remove("hidden");
+const mobileMenu = document.querySelector('.mobile-menu');
+const closeBtn = document.querySelector('.close-btn');
+const toggleMenu = document.querySelector('.navbar-toggler-icon');
+const footer = document.querySelector('.footer');
+const more = document.querySelector('.more');
+toggleMenu.addEventListener('click', () => {
+  mobileMenu.classList.remove('hidden');
 });
-closeBtn.addEventListener("click", function () {
-  mobileMenu.classList.add("hidden");
+closeBtn.addEventListener('click', () => {
+  mobileMenu.classList.add('hidden');
 });
-window.addEventListener("resize", function () {
+window.addEventListener('resize', () => {
   if (window.innerHeight >= 768) {
-    mobileMenu.classList.add("hidden");
+    mobileMenu.classList.add('hidden');
   }
 });
-more.addEventListener("click", function () {
-  footer.classList.remove("hidden");
-  moreMore.classList.add("hidden");
+more.addEventListener('click', () => {
+  footer.classList.remove('hidden');
+  more.classList.add('hidden');
 });
+
 const speakersArray = [
   {
-    name: "Dan Ssekasiko",
+    name: 'Dan Ssekasiko',
     university:
-      " Professor  of Computer Science & Engineering at the University of Washington",
-    img: "./images/speakers/pexels-igreja-dimensão-10295936.jpg",
-    biodata: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      ' Professor  of Computer Science & Engineering at the University of Washington',
+    img: './images/speakers/pexels-igreja-dimensão-10295936.jpg',
+    biodata: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
   },
   {
-    name: "Agaba Nelson",
+    name: 'Agaba Nelson',
     university:
-      "Professor of Computer Science & Engineering at the University of Washington ",
-    img: "./images/speakers/pexels-pranav-digwal-32976.jpg",
-    biodata: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      'Professor of Computer Science & Engineering at the University of Washington ',
+    img: './images/speakers/pexels-pranav-digwal-32976.jpg',
+    biodata: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
   },
   {
-    name: "Davin",
+    name: 'Davin',
     university:
-      "Professor of Computer Science & Engineering at the University of Washington",
-    img: "/images/speakers/product-school-DL-yyYDDNX4-unsplash.jpg",
-    biodata: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      'Professor of Computer Science & Engineering at the University of Washington',
+    img: '/images/speakers/product-school-DL-yyYDDNX4-unsplash.jpg',
+    biodata: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
   },
   {
-    name: "James Garry",
+    name: 'James Garry',
     university:
-      "Professor of Computer Science & Engineering at the University of Washington",
-    img: "./images/speakers/pexels-igreja-dimensão-10295936.jpg",
-    biodata: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      'Professor of Computer Science & Engineering at the University of Washington',
+    img: './images/speakers/pexels-igreja-dimensão-10295936.jpg',
+    biodata: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
   },
   {
-    name: "Daniel Matama",
+    name: 'Daniel Matama',
     university:
-      "Professor of Computer Science & Engineering at the University of Washington",
-    img: "./images/speakers/product-school-DL-yyYDDNX4-unsplash.jpg",
-    biodata: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      'Professor of Computer Science & Engineering at the University of Washington',
+    img: './images/speakers/product-school-DL-yyYDDNX4-unsplash.jpg',
+    biodata: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
   },
   {
-    name: "Glory Mugizi",
+    name: 'Glory Mugizi',
     university:
-      "Professor of Computer Science & Engineering at the University of Washington",
-    img: "./images/speakers/pexels-pranav-digwal-32976.jpg",
-    biodata: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      'Professor of Computer Science & Engineering at the University of Washington',
+    img: './images/speakers/pexels-pranav-digwal-32976.jpg',
+    biodata: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
   },
 ];
-const featuredSpeakers = document.querySelector(".speakers-container");
+const featuredSpeakers = document.querySelector('.speakers-container');
 speakersArray.forEach((speaker) => {
-  const { name, university, img, detail, biodata } = speaker;
+  const {
+    name, university, img, biodata,
+  } = speaker;
   featuredSpeakers.innerHTML += `<div class="speakers">
   <div>
     <div class="speaker-image">
