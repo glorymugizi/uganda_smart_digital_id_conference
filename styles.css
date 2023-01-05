@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: "lato", sans-serif;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -238,7 +239,7 @@
 
 .speaker-education {
   color: #ff4f39;
-  font-weight: 400;
+  font-weight: 800;
   font-style: italic;
 }
 
@@ -312,6 +313,7 @@ footer {
   padding: 1.25rem;
   background-color: #fff;
   color: #8e8e90;
+  font-weight: bolder;
 }
 
 .footer-paragraph {
@@ -349,6 +351,14 @@ footer {
     background-position: center;
   }
 
+  .introduction .container {
+    padding-left: 100px;
+  }
+
+  .introduction .introduction-heading {
+    font-weight: bold;
+  }
+
   .speakers-container {
     display: flex;
     flex-direction: row;
@@ -368,6 +378,10 @@ footer {
   .speaker-image {
     width: 160px;
     height: 140px;
+  }
+
+  .speakers p {
+    font-size: 13px;
   }
 
   .program-container {
@@ -397,6 +411,12 @@ footer {
     width: 100%;
     text-align: center;
     gap: 2px;
+  }
+
+  .program-icon:hover {
+    border: 2px solid #fff;
+    transform: scale(1.1);
+    transition: ease 1s;
   }
 
   .whole-program {
@@ -440,5 +460,6 @@ footer {
     background-color: #f2f2f2;
     color: #8e8e90;
     padding-left: 16rem;
+    font-weight: bolder;
   }
 }
