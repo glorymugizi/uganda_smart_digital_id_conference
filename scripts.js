@@ -18,6 +18,7 @@ const speakersArray = [
     name: 'Dan Ssekasiko',
     university:
       ' Professor  of Computer Science & Engineering at the University of Washington',
+    checkedImg: './images/chess-bg.png',
     img: './images/speakers/pexels-igreja-dimensão-10295936.jpg',
     biodata: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
   },
@@ -25,13 +26,15 @@ const speakersArray = [
     name: 'Agaba Nelson',
     university:
       'Professor of Computer Science & Engineering at the University of Washington ',
+    checkedImg: './images/chess-bg.png',
     img: './images/speakers/pexels-pranav-digwal-32976.jpg',
     biodata: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
   },
   {
-    name: 'Davin',
+    name: 'Davin Muruhura',
     university:
       'Professor of Computer Science & Engineering at the University of Washington',
+    checkedImg: './images/chess-bg.png',
     img: './images/speakers/product-school-DL-yyYDDNX4-unsplash.jpg',
     biodata: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
   },
@@ -39,6 +42,7 @@ const speakersArray = [
     name: 'James Garry',
     university:
       'Professor of Computer Science & Engineering at the University of Washington',
+    checkedImg: './images/chess-bg.png',
     img: './images/speakers/pexels-igreja-dimensão-10295936.jpg',
     biodata: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
   },
@@ -46,6 +50,7 @@ const speakersArray = [
     name: 'Daniel Matama',
     university:
       'Professor of Computer Science & Engineering at the University of Washington',
+    checkedImg: './images/chess-bg.png',
     img: './images/speakers/product-school-DL-yyYDDNX4-unsplash.jpg',
     biodata: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
   },
@@ -53,6 +58,7 @@ const speakersArray = [
     name: 'Glory Mugizi',
     university:
       'Professor of Computer Science & Engineering at the University of Washington',
+    checkedImg: './images/chess-bg.png',
     img: './images/speakers/pexels-pranav-digwal-32976.jpg',
     biodata: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
   },
@@ -60,13 +66,16 @@ const speakersArray = [
 const featuredSpeakers = document.querySelector('.speakers-container');
 speakersArray.forEach((speaker) => {
   const {
-    name, university, img, biodata,
+    name, university, checkedImg, img, biodata,
   } = speaker;
   featuredSpeakers.innerHTML += `<div class="speakers">
   <div>
     <div class="speaker-image">
       <img
-        src=${img}
+        src=${checkedImg} class="checked"
+      />
+      <img
+        src=${img} class="img-one"
       />
     </div>
   </div>
