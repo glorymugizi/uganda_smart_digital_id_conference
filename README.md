@@ -25,7 +25,7 @@ To get a local copy up and running follow these simple example steps.
 - Copy this repo from github`git@github.com:glorymugizi/uganda_smart_digital_id_conference.git`
 - Open text editor like the VScode or clone using your PC's terminal.
 - Type `git@github.com:glorymugizi/uganda_smart_digital_id_conference.git`
-- Run npm install to install dependencies. for linters and node sass.
+- Run npm install to install dependencies for linters.
 - HTML, CSS, JS Linter configuration - https://github.com/microverseinc/linters-config/tree/master/html-css-js
 
 ## Authors
