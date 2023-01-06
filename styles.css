@@ -424,10 +424,8 @@ footer {
   .introduction .introduction-heading {
     font-weight: bold;
   }
-
   .featured-speakers {
     border: black 3px solid;
-    margin: 0;
   }
 
   .speakers-container {
@@ -437,20 +435,22 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
     padding: 10px 0;
+    width: 45rem;
+    margin: auto;
   }
 
   .speakers {
     display: flex;
     font-size: 16px;
     gap: 10px;
-    width: 28rem;
+    width: 22rem;
   }
 
   .speakers-two {
     display: flex;
     font-size: 16px;
     gap: 10px;
-    width: 28rem;
+    width: 22rem;
   }
 
   .speaker-image {
@@ -459,10 +459,10 @@ footer {
   }
 
   .img-one {
-    width: 80px;
-    height: 100px;
+    width: 90px;
+    height: 110px;
     position: absolute;
-    top: 15px;
+    top: 8px;
     left: 15px;
   }
 
@@ -569,11 +569,16 @@ footer {
     font-weight: bolder;
     height: 8.5rem;
     width: 100%;
-    padding-left: 7rem;
     justify-content: center;
   }
 
   .hides-para {
     visibility: visible;
+  }
+  .footerlogo {
+    width: 100px;
+  }
+  .footer-para {
+    width: 700px;
   }
 }
