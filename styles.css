@@ -548,5 +548,9 @@ footer {
     color: #8e8e90;
     padding-left: 10rem;
     font-weight: bolder;
+    height: 8.5rem;
+    width: 100%;
+    padding-left: 7rem;
+    justify-content: center;
   }
 }
