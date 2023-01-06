@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'lato', sans-serif;
+  box-sizing: border-box;
+}
+
+.about .introduction {
+  background-image: url(./images/mobile-images/mobile-page-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 28.5rem;
+  padding-top: 1.25rem;
+}
+
+.about .introduction-heading {
+  text-align: center;
+  font-weight: 900;
+}
+
+.about .introduction-paragraph {
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  text-align: center;
+  height: 9.375rem;
+}
+
+.about-contact {
+  text-align: center;
+  font-size: 12px;
+}
+
+.about-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.625rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 25rem;
+}
+
+.about-heading {
+  padding: 0.625rem;
+}
+
+.about-heading h6 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.about-logo {
+  width: 100%;
+  text-align: center;
+}
+
+.about-logo img {
+  width: 12.5rem;
+  height: auto;
+  border: solid 1px #f1f1f1;
+}
+
+.hide-para {
+  visibility: hidden;
+}
+
+.past-summit {
+  display: flex;
+  flex-direction: column;
+  height: 37rem;
+}
+
+.past-summits {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 46rem;
+  overflow: hidden;
+  padding: 8px;
+}
+
+.past-description {
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.about .past-description h4 {
+  font-weight: 600;
+}
+
+.past-summit-images {
+  width: 100%;
+  margin: auto;
+  background: #ff4500;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.past-img {
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.past-summit-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.past-summit-images img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.program-heading hr {
+  height: 3px;
+  width: 30px;
+  border-width: 0;
+  color: #f94f3b;
+  background-color: #f94f3b;
+  margin-top: -2px;
+}
+
+@media only screen and (min-width: 768px) {
+  .fixed-navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .about .past-description {
+    padding-top: 10px;
+    width: 36rem;
+    margin: 1rem auto;
+  }
+
+  .about .past-description h4 {
+    font-weight: 500;
+  }
+
+  .about .introduction-paragraph {
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    text-align: center;
+    width: 80%;
+    margin-left: 6.625rem;
+  }
+
+  .about-heading .introduction-paragraph {
+    border: none;
+  }
+
+  .about-detail {
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.625rem;
+  }
+
+  .about-contact {
+    font-size: 16px;
+  }
+
+  .about-heading h6 {
+    text-align: center;
+  }
+
+  .past-summits {
+    text-align: center;
+    height: 35rem;
+    justify-content: center;
+    border-top: 2px solid #f1f1f1;
+  }
+
+  .past-summit {
+    display: flex;
+    flex-direction: row;
+    height: 20rem;
+    width: 41rem;
+    margin: auto;
+  }
+
+  .past-summit-images {
+    width: 20rem;
+    background: #ff4500;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 20rem;
+  }
+
+  .past-summit-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .past-img {
+    object-fit: cover;
+    opacity: 0.4;
+  }
+
+  .past-summit-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hide-para {
+    visibility: visible;
+  }
+
+  .about-logo {
+    display: flex;
+    height: 12.5rem;
+    justify-content: center;
+  }
+
+  .about-logo img {
+    width: 20.5rem;
+    height: auto;
+    border: 2px solid #f1f1f1;
+    padding: 20px;
+  }
+
+  .about .partners,
+  .footer-heading {
+    display: none;
+  }
+
+  .about .footer-logo {
+    background-color: #2e2e2e;
+    color: #f1f1f1;
+    height: 8.5rem;
+    width: 100%;
+    padding-left: 7rem;
+    justify-content: center;
+  }
+
+  .about.footerlogo {
+    width: 100px;
+  }
+
+  .about.footer-para {
+    width: 700px;
+  }
+}
