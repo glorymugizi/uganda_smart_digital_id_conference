@@ -1,5 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -122,9 +123,11 @@
 .introduction-heading {
   color: #f0450f;
 }
+
 .introduction .introduction-heading {
   font-weight: bold;
 }
+
 .introduction-paragraph {
   color: #646464;
   border: 4px solid #fff;
@@ -144,6 +147,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+
   /* padding: 1.25rem; */
 }
 
@@ -356,9 +360,11 @@ footer {
   border: 2px solid red;
   bottom: 0;
 }
+
 .footer-img {
   width: 60px;
   height: 60px;
+
   /* display: none; */
   border-radius: 30px;
   padding-top: 2px;
@@ -369,6 +375,7 @@ footer {
   padding-top: 2px;
   margin: auto 0;
 }
+
 .hides-para {
   visibility: hidden;
 }
@@ -567,6 +574,7 @@ footer {
     padding-left: 7rem;
     justify-content: center;
   }
+
   .hides-para {
     visibility: visible;
   }
