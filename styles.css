@@ -424,6 +424,7 @@ footer {
   .introduction .introduction-heading {
     font-weight: bold;
   }
+
   .featured-speakers {
     border: black 3px solid;
   }
@@ -575,9 +576,11 @@ footer {
   .hides-para {
     visibility: visible;
   }
+
   .footerlogo {
     width: 100px;
   }
+
   .footer-para {
     width: 700px;
   }

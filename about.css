@@ -254,9 +254,11 @@
     padding-left: 7rem;
     justify-content: center;
   }
+
   .about.footerlogo {
     width: 100px;
   }
+
   .about.footer-para {
     width: 700px;
   }
